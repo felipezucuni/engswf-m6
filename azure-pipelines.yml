@@ -20,7 +20,7 @@ steps:
       displayName: 'Install Node.js'
 
     - script: |
-          npm install -g @angular/cli@12.2.8
+          npm install -g @angular/cli@17.3.2
           npm install
       displayName: 'Install dependencies'
 
