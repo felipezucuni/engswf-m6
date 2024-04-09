@@ -8,7 +8,7 @@ trigger:
     - feature/*
 
 pool:
-    vmImage: ubuntu-latest
+    name: 'Linux Host'
  
 variables:
     isDevelop: $[eq(variables['Build.SourceBranch'], 'refs/heads/develop')]
