@@ -9,5 +9,5 @@ import { RouterOutlet } from '@angular/router';
 	styleUrl: './app.component.scss',
 })
 export class AppComponent {
-	title = 'Engenharia de Software M6';
+	title = 'Engenharia de Software - M6';
 }
