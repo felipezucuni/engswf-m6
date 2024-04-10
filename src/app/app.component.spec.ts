@@ -17,7 +17,7 @@ describe('AppComponent', () => {
 	it(`should have the 'admin-lte' title`, () => {
 		const fixture = TestBed.createComponent(AppComponent);
 		const app = fixture.componentInstance;
-		expect(app.title).toEqual('admin-lte');
+		expect(app.title).toEqual('Engenharia de Software M6');
 	});
 
 	it('should render title', () => {
@@ -25,7 +25,7 @@ describe('AppComponent', () => {
 		fixture.detectChanges();
 		const compiled = fixture.nativeElement as HTMLElement;
 		expect(compiled.querySelector('h1')?.textContent).toContain(
-			'Hello, admin-lte'
+			'Olá Mundo!'
 		);
 	});
 });
