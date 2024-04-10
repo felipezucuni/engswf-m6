@@ -28,10 +28,6 @@ steps:
           ng lint
       displayName: 'Lint code'
 
-    - script: |
-          ng build --configuration=tst
-      displayName: 'Build for test environment'
-
     - task: PublishBuildArtifacts@1
       inputs:          
           PathtoPublish: '$(Build.SourcesDirectory)/dist'
