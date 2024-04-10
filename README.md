@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# Engenharia de Software M6
-=======
 # Engenharia de Software - M6
->>>>>>> d8d64b7ef8785ed0b012f7d8cec91a7d4fc42673
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
 
