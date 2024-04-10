@@ -31,6 +31,6 @@ steps:
     - task: PublishBuildArtifacts@1
       inputs:          
           PathtoPublish: '$(Build.SourcesDirectory)/dist'
-          ArtifactName: 'meufluxo-ead-front'
+          ArtifactName: 'engswf-m6'
           StoreAsTar: true
       condition: and(succeeded(), eq(variables.isDevelop, 'true'))
