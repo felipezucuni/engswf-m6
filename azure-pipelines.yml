@@ -27,10 +27,10 @@ steps:
     - script: |
           ng lint
       displayName: 'Lint code'
-
-    - task: PublishBuildArtifacts@1
-      inputs:          
-          PathtoPublish: '$(Build.SourcesDirectory)/dist'
-          ArtifactName: 'engswf-m6'
-          StoreAsTar: true
+      
+    - task: PublishPipelineArtifact@0
+      displayName: 'Publish pipeline artifact'
+      inputs:
+          artifactName: 'drop'
+          targetPath: '$(Build.ArtifactStagingDirectory)'
       condition: and(succeeded(), eq(variables.isDevelop, 'true'))
