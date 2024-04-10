@@ -31,6 +31,6 @@ steps:
     - task: PublishPipelineArtifact@0
       displayName: 'Publish pipeline artifact'
       inputs:
-          artifactName: 'drop'
+          artifactName: 'engswf-6-artifact'
           targetPath: '$(Build.ArtifactStagingDirectory)'
       condition: and(succeeded(), eq(variables.isDevelop, 'true'))
